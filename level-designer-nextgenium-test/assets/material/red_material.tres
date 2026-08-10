@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dyqgneoi2duce"]
+
+[ext_resource type="Texture2D" uid="uid://cfm3b7pwt6gxy" path="res://assets/textures/texture_red.png" id="1_lpble"]
+
+[resource]
+albedo_texture = ExtResource("1_lpble")
+uv1_triplanar = true
