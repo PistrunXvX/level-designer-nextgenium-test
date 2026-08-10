@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d0uowfm4sefak"]
+
+[ext_resource type="Material" uid="uid://dter3q082l6md" path="res://assets/material/purple_material.tres" id="1_4ehif"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_8v3de"]
+
+[node name="BtnUpPlatformObject" type="Node3D" unique_id=1244543420]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=355323415]
+material_override = ExtResource("1_4ehif")
+mesh = SubResource("BoxMesh_8v3de")
+
+[node name="Label3D" type="Label3D" parent="." unique_id=964200699]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3696861, 0)
+billboard = 1
+text = "Кнопка активации платформы (вверх)"

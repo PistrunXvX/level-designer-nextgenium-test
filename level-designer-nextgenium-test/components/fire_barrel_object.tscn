@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dgb6tx4etvfyk"]
+
+[ext_resource type="Material" uid="uid://bwv54351r1t0c" path="res://assets/material/orange_material.tres" id="1_vogih"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_s1pd2"]
+
+[node name="FireBarrelObject" type="Node3D" unique_id=1244543420]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=355323415]
+material_override = ExtResource("1_vogih")
+mesh = SubResource("CylinderMesh_s1pd2")
+
+[node name="Label3D" type="Label3D" parent="." unique_id=964200699]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3696861, 0)
+billboard = 1
+text = "Взырвная бочка"
