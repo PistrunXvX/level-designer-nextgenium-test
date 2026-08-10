@@ -1,6 +1,18 @@
 [gd_scene format=3 uid="uid://d11wmuncyby0r"]
 
 [ext_resource type="Material" uid="uid://cmuoev83au87v" path="res://assets/material/dark_material.tres" id="1_u52ul"]
+[ext_resource type="PackedScene" uid="uid://j7nkljhtawst" path="res://components/chest_object.tscn" id="2_2orkt"]
+[ext_resource type="PackedScene" uid="uid://d0uowfm4sefak" path="res://components/btn_up_platform_object.tscn" id="3_aicyk"]
+[ext_resource type="PackedScene" uid="uid://bwwa0p7sdpw2b" path="res://components/vertical_platform_object.tscn" id="4_8b0r0"]
+[ext_resource type="PackedScene" uid="uid://b1gmx3vkr176c" path="res://components/rock_destroyed_object.tscn" id="5_h6smj"]
+[ext_resource type="PackedScene" uid="uid://dyj7abvre3mlr" path="res://components/arena_close_object.tscn" id="6_v5j5c"]
+[ext_resource type="PackedScene" uid="uid://dgb6tx4etvfyk" path="res://components/fire_barrel_object.tscn" id="7_5pxul"]
+[ext_resource type="PackedScene" uid="uid://bqh4t5i24fq1n" path="res://components/cover_static_object.tscn" id="8_fedht"]
+[ext_resource type="PackedScene" uid="uid://rftc6qxfohp3" path="res://components/cover_destroyed_object.tscn" id="9_4c15r"]
+[ext_resource type="PackedScene" uid="uid://be38q3mvlmxb4" path="res://components/tree_object.tscn" id="10_ait7k"]
+[ext_resource type="PackedScene" uid="uid://dqc87xx6fhh8f" path="res://components/arena_free_object.tscn" id="11_42xju"]
+[ext_resource type="PackedScene" uid="uid://bfrlm1evs5fif" path="res://components/terminal_quest_object.tscn" id="12_aicyk"]
+[ext_resource type="PackedScene" uid="uid://bv8i4am2okvv7" path="res://components/enemy_object.tscn" id="13_8b0r0"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_v7sqt"]
 resource_local_to_scene = true
@@ -354,6 +366,96 @@ size = Vector3(1, 5, 8)
 
 [node name="Blackout_short_path" type="Node3D" parent="." unique_id=1860098869]
 
+[node name="CoverStaticObject2" parent="Blackout_short_path" unique_id=66622465 instance=ExtResource("8_fedht")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.476331, -9.0257635, -85.37174)
+
+[node name="EnemyObject" parent="Blackout_short_path" unique_id=550673338 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4509647, -8.583654, -91.96751)
+
+[node name="EnemyObject2" parent="Blackout_short_path" unique_id=1466831929 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1282842, -8.583654, -91.96751)
+
+[node name="EnemyObject3" parent="Blackout_short_path" unique_id=1174123368 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.948592, -8.583654, -97.102615)
+
+[node name="EnemyObject4" parent="Blackout_short_path" unique_id=293934459 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3259919, -8.583654, -97.102615)
+
+[node name="EnemyObject5" parent="Blackout_short_path" unique_id=1799574024 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52379286, -8.583654, -97.102615)
+
+[node name="EnemyObject6" parent="Blackout_short_path" unique_id=1938671062 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.027357, -8.583654, -97.102615)
+
+[node name="EnemyObject7" parent="Blackout_short_path" unique_id=392868726 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8600569, -8.583654, -97.102615)
+
+[node name="FireBarrelObject" parent="Blackout_short_path" unique_id=1925228496 instance=ExtResource("7_5pxul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.763939, -8.520786, -94.26315)
+
+[node name="CoverDestroyedObject" parent="Blackout_short_path" unique_id=2077698077 instance=ExtResource("9_4c15r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8633723, -9.058185, -107.35224)
+
+[node name="CoverDestroyedObject2" parent="Blackout_short_path" unique_id=809350810 instance=ExtResource("9_4c15r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7338989, -9.058185, -107.35224)
+
+[node name="EnemyObject8" parent="Blackout_short_path" unique_id=1065846149 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5492516, -8.45854, -110.31211)
+
+[node name="EnemyObject9" parent="Blackout_short_path" unique_id=913242715 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9973307, -8.45854, -112.80126)
+
+[node name="EnemyObject10" parent="Blackout_short_path" unique_id=2090164064 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2313027, -8.45854, -112.80126)
+
+[node name="EnemyObject11" parent="Blackout_short_path" unique_id=604722963 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6113472, -8.45854, -115.4704)
+
+[node name="EnemyObject12" parent="Blackout_short_path" unique_id=1604025293 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3842793, -8.45854, -119.16643)
+
+[node name="EnemyObject13" parent="Blackout_short_path" unique_id=1925236335 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35269713, -8.45854, -119.16643)
+
+[node name="EnemyObject14" parent="Blackout_short_path" unique_id=1332184075 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4885792, -8.45854, -119.16643)
+
+[node name="EnemyObject15" parent="Blackout_short_path" unique_id=1418722516 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9108453, -8.45854, -119.16643)
+
+[node name="FireBarrelObject2" parent="Blackout_short_path" unique_id=1003179265 instance=ExtResource("7_5pxul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0826752, -8.54546, -115.96049)
+
+[node name="FireBarrelObject3" parent="Blackout_short_path" unique_id=1894605321 instance=ExtResource("7_5pxul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6637018, -8.54546, -115.96049)
+
+[node name="RockDestroyedObject" parent="Blackout_short_path" unique_id=1244543420 instance=ExtResource("5_h6smj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4199085, -9.028846, -125.00059)
+
+[node name="RockDestroyedObject2" parent="Blackout_short_path" unique_id=1550469506 instance=ExtResource("5_h6smj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8711953, -9.028846, -125.00059)
+
+[node name="RockDestroyedObject3" parent="Blackout_short_path" unique_id=335036947 instance=ExtResource("5_h6smj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.0391593, -9.028846, -125.00059)
+
+[node name="FireBarrelObject4" parent="Blackout_short_path" unique_id=1267352237 instance=ExtResource("7_5pxul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8430225, -8.467178, -122.89658)
+
+[node name="EnemyObject16" parent="Blackout_short_path" unique_id=830138901 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4552035, -8.521778, -122.71303)
+
+[node name="EnemyObject17" parent="Blackout_short_path" unique_id=1447652401 instance=ExtResource("13_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.747666, -8.521778, -122.71303)
+
+[node name="ChestObject" parent="Blackout_short_path" unique_id=2067830941 instance=ExtResource("2_2orkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54193, -9.02647, -128.43329)
+
+[node name="VerticalPlatform" parent="Blackout_short_path" unique_id=886024319 instance=ExtResource("4_8b0r0")]
+transform = Transform3D(0.014668252, 0, -0.9998924, 0, 1, 0, 0.9998924, 0, 0.014668252, -2.7398527, -9.014502, -130.83165)
+
+[node name="BtnUpPlatformObject" parent="Blackout_short_path" unique_id=1334885087 instance=ExtResource("3_aicyk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4075212, -9.018512, -132.64124)
+
 [node name="MeshInstance3D12" type="MeshInstance3D" parent="Blackout_short_path" unique_id=598458701]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -4.9526873, 1.9861183, -103.82599)
 material_override = ExtResource("1_u52ul")
@@ -380,6 +482,36 @@ material_override = ExtResource("1_u52ul")
 mesh = SubResource("BoxMesh_4wtct")
 
 [node name="Blackout_Start" type="Node3D" parent="." unique_id=1347293220]
+
+[node name="ChestObject" parent="Blackout_Start" unique_id=1458169101 instance=ExtResource("2_2orkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.781946, 0.9629396, -54.474888)
+
+[node name="BtnUpPlatformObject" parent="Blackout_Start" unique_id=165059116 instance=ExtResource("3_aicyk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.253323, 1.021472, -56.571613)
+
+[node name="VerticalPlatform" parent="Blackout_Start" unique_id=1204427396 instance=ExtResource("4_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17737842, 13.9832945, -75.68904)
+
+[node name="RockDestroyedObject" parent="Blackout_Start" unique_id=357667427 instance=ExtResource("5_h6smj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.413182, 1.0054778, -13.4758005)
+
+[node name="ArenaCloseObject" parent="Blackout_Start" unique_id=1244559553 instance=ExtResource("6_v5j5c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.6705923, 0.9956155, -35.253616)
+
+[node name="FireBarrelObject" parent="Blackout_Start" unique_id=1350042326 instance=ExtResource("7_5pxul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.756851, 1.4076054, -28.568909)
+
+[node name="FireBarrelObject2" parent="Blackout_Start" unique_id=2014608497 instance=ExtResource("7_5pxul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.077420235, 1.4076054, -41.204403)
+
+[node name="CoverStaticObject" parent="Blackout_Start" unique_id=1730526312 instance=ExtResource("8_fedht")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1420933, 0.9920765, -29.368286)
+
+[node name="CoverStaticObject2" parent="Blackout_Start" unique_id=518095806 instance=ExtResource("8_fedht")]
+transform = Transform3D(0.81361896, 0, 0.5813984, 0, 1, 0, -0.5813984, 0, 0.81361896, -9.349521, 0.9920765, -40.87437)
+
+[node name="CoverDestroyedObject" parent="Blackout_Start" unique_id=160388992 instance=ExtResource("9_4c15r")]
+transform = Transform3D(0.08353532, 0, 0.99650484, 0, 1, 0, -0.99650484, 0, 0.08353532, -12.245244, 0.9577334, -33.342796)
 
 [node name="MeshInstance3D18" type="MeshInstance3D" parent="Blackout_Start" unique_id=1269470058]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.401154, 7.0166025, -59.68754)
@@ -482,6 +614,51 @@ material_override = ExtResource("1_u52ul")
 mesh = SubResource("BoxMesh_ait7k")
 
 [node name="Blockout_main_path" type="Node3D" parent="." unique_id=787346375]
+
+[node name="TreeObject" parent="Blockout_main_path" unique_id=525934063 instance=ExtResource("10_ait7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5177126, 14.942894, -90.54071)
+
+[node name="ArenaFreeObject" parent="Blockout_main_path" unique_id=714648820 instance=ExtResource("11_42xju")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.232256, 14.975216, -84.21664)
+
+[node name="CoverDestroyedObject2" parent="Blockout_main_path" unique_id=429983271 instance=ExtResource("9_4c15r")]
+transform = Transform3D(0.6471035, 0, 0.7624022, 0, 1, 0, -0.7624022, 0, 0.6471035, -36.86674, 14.994842, -90.28714)
+
+[node name="RockDestroyedObject" parent="Blockout_main_path" unique_id=157367792 instance=ExtResource("5_h6smj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.352562, 14.988381, -73.49669)
+
+[node name="FireBarrelObject" parent="Blockout_main_path" unique_id=1902017201 instance=ExtResource("7_5pxul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.022844, 15.448383, -76.82555)
+
+[node name="FireBarrelObject2" parent="Blockout_main_path" unique_id=1959093219 instance=ExtResource("7_5pxul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.600748, 15.448383, -87.28602)
+
+[node name="FireBarrelObject3" parent="Blockout_main_path" unique_id=599938667 instance=ExtResource("7_5pxul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.277588, 15.448383, -82.7129)
+
+[node name="CoverStaticObject2" parent="Blockout_main_path" unique_id=1782201877 instance=ExtResource("8_fedht")]
+transform = Transform3D(0.5466456, 0, -0.8373641, 0, 1, 0, 0.8373641, 0, 0.5466456, -36.861973, 15.026178, -79.08615)
+
+[node name="CoverStaticObject3" parent="Blockout_main_path" unique_id=1078697657 instance=ExtResource("8_fedht")]
+transform = Transform3D(0.99999577, 0, 0.0028985697, 0, 1, 0, -0.0028985697, 0, 0.99999577, -20.309584, 15.026178, -91.19328)
+
+[node name="CoverDestroyedObject" parent="Blockout_main_path" unique_id=76410260 instance=ExtResource("9_4c15r")]
+transform = Transform3D(0.6471035, 0, 0.7624022, 0, 1, 0, -0.7624022, 0, 0.6471035, -10.717805, 14.994842, -80.04462)
+
+[node name="VerticalPlatform" parent="Blockout_main_path" unique_id=1952880415 instance=ExtResource("4_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.51744, 14.987772, -93.395355)
+
+[node name="BtnUpPlatformObject" parent="Blockout_main_path" unique_id=1458257378 instance=ExtResource("3_aicyk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.91479, 14.976351, -102.16505)
+
+[node name="BtnUpPlatformObject2" parent="Blockout_main_path" unique_id=1223903474 instance=ExtResource("3_aicyk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.349743, 14.976351, -86.161095)
+
+[node name="BtnUpPlatformObject3" parent="Blockout_main_path" unique_id=2048447178 instance=ExtResource("3_aicyk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.548746, 14.976351, -61.03539)
+
+[node name="ChestObject" parent="Blockout_main_path" unique_id=434161084 instance=ExtResource("2_2orkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.465311, 19.989311, -126.3141)
 
 [node name="MeshInstance3D8" type="MeshInstance3D" parent="Blockout_main_path" unique_id=1247566372]
 transform = Transform3D(0.99997824, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000094, -24.93613, 13.999134, -84.959015)
@@ -650,6 +827,45 @@ mesh = SubResource("BoxMesh_h44gt")
 
 [node name="Blockout_second_path" type="Node3D" parent="." unique_id=1669110975]
 
+[node name="TerminalQuestObject" parent="Blockout_second_path" unique_id=1360897632 instance=ExtResource("12_aicyk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.561312, 14.988632, -99.07636)
+
+[node name="TerminalQuestObject2" parent="Blockout_second_path" unique_id=2027994415 instance=ExtResource("12_aicyk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.30285, 14.988204, -103.4788)
+
+[node name="ChestObject" parent="Blockout_second_path" unique_id=107939274 instance=ExtResource("2_2orkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.10483, 14.987082, -90.51124)
+
+[node name="VerticalPlatform" parent="Blockout_second_path" unique_id=1324558818 instance=ExtResource("4_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.49042, 14.965689, -103.42591)
+
+[node name="BtnUpPlatformObject" parent="Blockout_second_path" unique_id=70140865 instance=ExtResource("3_aicyk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.28445, 14.974598, -99.57244)
+
+[node name="ArenaCloseObject" parent="Blockout_second_path" unique_id=1331101560 instance=ExtResource("6_v5j5c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.818073, 19.983482, -114.86708)
+
+[node name="CoverStaticObject" parent="Blockout_second_path" unique_id=728136075 instance=ExtResource("8_fedht")]
+transform = Transform3D(-0.011574172, 0, -0.999933, 0, 1, 0, 0.999933, 0, -0.011574172, 32.110424, 19.978083, -113.10949)
+
+[node name="FireBarrelObject" parent="Blockout_second_path" unique_id=941524701 instance=ExtResource("7_5pxul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.091908, 20.486826, -109.900894)
+
+[node name="FireBarrelObject2" parent="Blockout_second_path" unique_id=741110313 instance=ExtResource("7_5pxul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.31521, 20.486826, -119.268364)
+
+[node name="CoverDestroyedObject" parent="Blockout_second_path" unique_id=1872854752 instance=ExtResource("9_4c15r")]
+transform = Transform3D(0.63844836, 0, 0.76966465, 0, 1, 0, -0.76966465, 0, 0.63844836, 49.98344, 19.988865, -112.2058)
+
+[node name="CoverDestroyedObject2" parent="Blockout_second_path" unique_id=1943341854 instance=ExtResource("9_4c15r")]
+transform = Transform3D(0.9986429, 0, 0.052080303, 0, 1, 0, -0.052080303, 0, 0.9986429, 43.098522, 19.988865, -109.26809)
+
+[node name="CoverDestroyedObject3" parent="Blockout_second_path" unique_id=1741935245 instance=ExtResource("9_4c15r")]
+transform = Transform3D(0.9986429, 0, 0.052080303, 0, 1, 0, -0.052080303, 0, 0.9986429, 41.33301, 19.988865, -120.05347)
+
+[node name="RockDestroyedObject" parent="Blockout_second_path" unique_id=1965082622 instance=ExtResource("5_h6smj")]
+transform = Transform3D(-0.031009156, 0, 0.9995191, 0, 1, 0, -0.9995191, 0, -0.031009156, 0.9640995, 19.984426, -113.40592)
+
 [node name="MeshInstance3D9" type="MeshInstance3D" parent="Blockout_second_path" unique_id=1003319357]
 transform = Transform3D(0.99997824, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000094, 5.0610595, 13.999111, -90.459076)
 material_override = ExtResource("1_u52ul")
@@ -746,6 +962,51 @@ material_override = ExtResource("1_u52ul")
 mesh = SubResource("BoxMesh_2mem0")
 
 [node name="Blockout_finish" type="Node3D" parent="." unique_id=1422330061]
+
+[node name="ArenaCloseObject" parent="Blockout_finish" unique_id=954600929 instance=ExtResource("6_v5j5c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.86009, 15.000567, -156.14072)
+
+[node name="CoverStaticObject" parent="Blockout_finish" unique_id=911829151 instance=ExtResource("8_fedht")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.82222, 14.9908495, -148.65038)
+
+[node name="CoverStaticObject2" parent="Blockout_finish" unique_id=1935105171 instance=ExtResource("8_fedht")]
+transform = Transform3D(-0.025837213, 0, -0.99966615, 0, 1, 0, 0.99966615, 0, -0.025837213, -29.68847, 14.9908495, -156.40457)
+
+[node name="CoverStaticObject3" parent="Blockout_finish" unique_id=1809373515 instance=ExtResource("8_fedht")]
+transform = Transform3D(-0.025837213, 0, -0.99966615, 0, 1, 0, 0.99966615, 0, -0.025837213, -11.881109, 14.9908495, -156.40457)
+
+[node name="CoverStaticObject4" parent="Blockout_finish" unique_id=148592590 instance=ExtResource("8_fedht")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.82222, 14.9908495, -162.71873)
+
+[node name="FireBarrelObject" parent="Blockout_finish" unique_id=360701217 instance=ExtResource("7_5pxul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.524863, 15.496496, -152.11508)
+
+[node name="FireBarrelObject2" parent="Blockout_finish" unique_id=831895043 instance=ExtResource("7_5pxul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.615416, 15.496496, -160.35527)
+
+[node name="FireBarrelObject3" parent="Blockout_finish" unique_id=732149551 instance=ExtResource("7_5pxul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.305721, 15.496496, -160.35527)
+
+[node name="FireBarrelObject4" parent="Blockout_finish" unique_id=1813038279 instance=ExtResource("7_5pxul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.445532, 15.496496, -151.94284)
+
+[node name="CoverDestroyedObject" parent="Blockout_finish" unique_id=736266972 instance=ExtResource("9_4c15r")]
+transform = Transform3D(0.5116739, 0, -0.8591797, 0, 1, 0, 0.8591797, 0, 0.5116739, -32.469597, 14.985331, -149.65881)
+
+[node name="CoverDestroyedObject2" parent="Blockout_finish" unique_id=377078608 instance=ExtResource("9_4c15r")]
+transform = Transform3D(-0.5818188, 0, -0.8133183, 0, 1, 0, 0.8133183, 0, -0.5818188, -31.184557, 14.985331, -163.72935)
+
+[node name="CoverDestroyedObject3" parent="Blockout_finish" unique_id=876286201 instance=ExtResource("9_4c15r")]
+transform = Transform3D(-0.7598625, 0, 0.6500838, 0, 1, 0, -0.6500838, 0, -0.7598625, -11.653215, 14.985331, -163.28052)
+
+[node name="CoverDestroyedObject4" parent="Blockout_finish" unique_id=553271356 instance=ExtResource("9_4c15r")]
+transform = Transform3D(0.61492336, 0, 0.78858685, 0, 1, 0, -0.78858685, 0, 0.61492336, -12.365804, 14.985331, -149.63684)
+
+[node name="ChestObject" parent="Blockout_finish" unique_id=292041118 instance=ExtResource("2_2orkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.6382527, 14.961311, -166.93282)
+
+[node name="ChestObject2" parent="Blockout_finish" unique_id=517834602 instance=ExtResource("2_2orkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.190277, 14.961311, -166.93282)
 
 [node name="MeshInstance3D40" type="MeshInstance3D" parent="Blockout_finish" unique_id=315855751]
 transform = Transform3D(0.99997824, 0, 0, 0, 1.0000001, 0, 0, 0, 1.0000094, -15.4354, 13.999134, -139.95906)
